@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Checkoutform</title>
 </head>
+
 <body>
-    <h1>Checkout</h1>
-    
+    <h1 id="title1">Checkout</h1>
+    <main>
+        <form action>
+            <div id="contact-info">
+                <h1>Contact İnformation</h1>
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <div class="input-field">
+                        <input type="email" name="email" id="user-email" placeholder="Enter your email..." required>
+                        <i class="fa-solid fa-square-envelope" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="campo">
+                    <label for="phone">Phone</label>
+                    <div class="input-field">
+                        <input type="number" name="phone" id="phone-num" placeholder="Enter your phone number">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="shipping-address" class="data-form">
+                <h1>Shipping address</h1>
+                <div class="campo">
+                    <label for="full-name">Full name</label>
+                    <div>
+                        <input type="text" placeholder="Enter your Full name...">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    
+                    <div>
+                        <label for="adress">Adress</label>
+                        <div>
+                            <input type="text" placeholder="Enter your address...">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                    </div>
+
+                    <div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </form>
+    </main>
+
+
 </body>
+
 </html>
