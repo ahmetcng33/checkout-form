@@ -1,6 +1,36 @@
-#title1{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1950px;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 10rem;
+  }
+  main label {
+    font-size: 0.9rem;
+  }
+
+ h1 {
     text-align: center;
-    display: block;
-    font-size: 2rem;
-    font-weight: bold;
-}
+    font-size: 2.1rem;
+    margin: 1.5rem;
+  }
+
+  #contact-info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: gray;
+  }
+  .contact {
+    margin-top: 1rem;
+  }
+
+
+  .icon {
+    position: relative;
+  }
