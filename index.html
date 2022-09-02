@@ -38,12 +38,12 @@
                 <h1>Shipping address</h1>
                 <div class="campo">
                     <label for="full-name">Full name</label>
-                    <div>
+                    <div class="campo">
                         <input type="text" placeholder="Enter your Full name...">
                         <i class="fa-solid fa-user"></i>
                     </div>
-                    
-                    <div>
+
+                    <div class="campo">
                         <label for="adress">Adress</label>
                         <div>
                             <input type="text" placeholder="Enter your address...">
@@ -51,16 +51,103 @@
                         </div>
                     </div>
 
+                    <div class="campo">
+                        <label for="city">City</label>
+                        <div>
+                            <input type="text" placeholder="Enter your city...">
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+                    </div>
+                    <div class="campo"> 
+                        <label for="country">Country</label>
+                        <div>
+                            <select name="country" id="country">
+                                <option value="Turkey">Turkey</option>
+                                <option value="USA">USA</option>
+                                <option value="UK">UK</option>
+                                <option value="Canada">Canada</option>
+                            </select>
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="post-code">Post Code</label>
+                        <div>
+                            <input type="text" placeholder="Enter your postal code...">
+                            <i class="fa-sharp fa-solid fa-envelopes-bulk"></i>
+                        </div>
+                    </div>
                     <div>
-
+                        <input type="checkbox" name="next-time" id="next-time-form">
+                        <label for="next-time-form">See this information next time</label>
                     </div>
 
                 </div>
+                <button id="continue" type="submit">Continue</button>
+            </div>
+        </form>
+
+        <div id="products-prewiew">
+            <div id="product-panel">
+                <div class="product">
+                    <img src="photo1.png" alt>
+                    <div class="product-info">
+                        <h2>Vintage Backbag</h2>
+                        <p>
+                            <strong>$55.99</strong>
+                            <span class="line-through">$94.99</span>
+                        </p>
+                        <div class="quantity-controller">
+                            <button>
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <p>1</p>
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="photo2.png" alt>
+                    <div class="product-info">
+                        <h2>Levi Shoes</h2>
+                        <p>
+                            <strong>$74.99</strong>
+                            <span class="line-through">$124.99</span>
+                        </p>
+                        <div class="quantity-controller">
+                            <button>
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <p>1</p>
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>  
+                
+                <div class="buy-detail" id="shipping">
+                    <p>Shipping</p>
+                    <p>$19</p>
+
+                </div>
+
+                <div class="buy-detail" id="total">
+                    <p>Total</p>
+                    <p>$148.98</p>
+
+                </div>
+
             </div>
 
 
-
-        </form>
+        </div>
     </main>
 
 
