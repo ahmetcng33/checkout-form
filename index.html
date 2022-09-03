@@ -11,22 +11,26 @@
 </head>
 
 <body>
-    <h1 id="title1">Checkout</h1>
+    <header>
+        <h1 id="title1">Checkout</h1>
+    </header>
     <main>
-        <form action>
-            <div id="contact-info">
+        <form action class="information">
+            <div id="contact">
                 <h1>Contact İnformation</h1>
-                <div class="campo" id="contact-input">
+                <div class="part" id="contact-input">
                     <label for="email">Email</label>
-                    <div class="input-field">
+                    <br>
+                    <div class="icon">
                         <input type="email" name="email" id="user-email" placeholder="Enter your email..." required>
                         <i class="fa-solid fa-square-envelope" aria-hidden="true"></i>
                     </div>
                 </div>
-                <div class="campo" id="contact-input">
+
+                <div class="part">
                     <label for="phone">Phone</label>
-                    <div class="input-field">
-                        <input type="number" name="phone" id="phone-num" placeholder="Enter your phone number">
+                    <div class="icon">
+                        <input type="number" name="phone" id="phone-num" placeholder="Enter your phone number" required>
                         <i class="fa-solid fa-phone"></i>
                     </div>
                 </div>
@@ -34,70 +38,82 @@
             </div>
 
 
-            <div id="shipping-address" class="data-form">
+            <div class="address">
                 <h1>Shipping address</h1>
-                <div class="campo">
-                    <label for="full-name">Full name</label>
-                    <div class="campo">
-                        <input type="text" placeholder="Enter your Full name...">
+
+                <div class="part">
+                    <label for="name">Full name</label>
+                    <div class="icon">
+                        <input type="text" id="name" placeholder="Enter your Full name..." required>
                         <i class="fa-solid fa-user"></i>
                     </div>
 
-                    <div class="campo">
-                        <label for="adress">Adress</label>
-                        <div>
-                            <input type="text" placeholder="Enter your address...">
+                    <div class="part">
+                        <label for="address">Address</label>
+                        <div class="icon">
+                            <input type="text" name="address" id="address" placeholder="Enter your address..." required>
                             <i class="fa-solid fa-house"></i>
                         </div>
                     </div>
 
-                    <div class="campo">
+                    <div class="part">
                         <label for="city">City</label>
-                        <div>
-                            <input type="text" placeholder="Enter your city...">
+                        <br>
+                        <div class="icon">
+                            <input type="text" name="city" id="city" placeholder="Enter your city...">
                             <i class="fa-solid fa-city"></i>
                         </div>
                     </div>
-                    <div class="campo">
-                        <label for="country">Country</label>
-                        <div>
-                            <select name="country" id="country">
-                                <option value="Turkey">Turkey</option>
-                                <option value="USA">USA</option>
-                                <option value="UK">UK</option>
-                                <option value="Canada">Canada</option>
-                            </select>
-                            <i class="fa-solid fa-earth-americas"></i>
-                        </div>
-                    </div>
-                    <div class="campo">
-                        <label for="post-code">Post Code</label>
-                        <div>
-                            <input type="text" placeholder="Enter your postal code...">
-                            <i class="fa-sharp fa-solid fa-envelopes-bulk"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="next-time" id="next-time-form">
-                        <label for="next-time-form">See this information next time</label>
-                    </div>
 
+                    <div class="country-and-post">
+                        <div class="country">
+                            <label for="country">Country</label>
+                            <br>
+                            <div class="icon">
+                                <select name="country" id="country">
+                                    <option value="Turkey">Turkey</option>
+                                    <option value="USA">USA</option>
+                                    <option value="UK">UK</option>
+                                    <option value="Canada">Canada</option>
+                                </select>
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="post-code">
+                            <label for="post-code">Post Code</label>
+                            <br>
+                            <div class="icon">
+                                <input type="text" name="post-code" id="post-code" placeholder="Enter your postal code..."
+                                required>
+                                <i class="fa-sharp fa-solid fa-envelopes-bulk"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button id="continue" type="submit">Continue</button>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="next-time" id="nextTime" />
+                    <label for="nextTime" id="nextTimeLabel">See this information next time</label>
+                </div>
+
+                <div class="btn">
+                    <button>Continue</button>
+                </div>
             </div>
         </form>
 
-        <div id="products-prewiew">
-            <div id="product-panel">
-                <div class="product">
-                    <img src="photo1.png" alt>
-                    <div class="product-info">
+        <div class="card-box">
+            <div class="card-box2">
+                <div class="card">
+                    <img src="photo1.png" alt="Vintage backbag">
+                    <div class="card-info">
                         <h2>Vintage Backbag</h2>
                         <p>
-                            <strong>$55.99</strong>
-                            <span class="line-through">$94.99</span>
+                            <span class="valid">$54.99</span>
+                            <span class="invalid">$94.99</span>
                         </p>
-                        <div class="quantity-controller">
+                        <div class="piece">
                             <button>
                                 <i class="fa-solid fa-minus"></i>
                             </button>
@@ -109,15 +125,15 @@
                     </div>
                 </div>
 
-                <div class="product">
-                    <img src="photo2.png" alt>
+                <div class="card">
+                    <img src="photo2.png" alt="Levi Shoes">
                     <div class="product-info">
                         <h2>Levi Shoes</h2>
                         <p>
-                            <strong>$74.99</strong>
-                            <span class="line-through">$124.99</span>
+                            <span class="valid">$74.99</span>
+                            <span class="invalid">$124.99</span>
                         </p>
-                        <div class="quantity-controller">
+                        <div class="piece">
                             <button>
                                 <i class="fa-solid fa-minus"></i>
                             </button>
@@ -132,21 +148,17 @@
 
                 </div>
 
-                <div class="buy-detail" id="shipping">
-                    <p>Shipping</p>
-                    <p>$19</p>
-
+                <div class="result">
+                    <div class="end-1">
+                        <p class="p1">Shipping</p>
+                        <p class="p2">$19</p>
+                    </div>
+                    <div class="end-2">
+                        <p class="p1">Total</p>
+                        <p class="p2">$148.98</p>
+                    </div>
                 </div>
-
-                <div class="buy-detail" id="total">
-                    <p>Total</p>
-                    <p>$148.98</p>
-
-                </div>
-
             </div>
-
-
         </div>
     </main>
 
